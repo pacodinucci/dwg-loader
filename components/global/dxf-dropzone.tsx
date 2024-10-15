@@ -26,7 +26,7 @@ const DXFDropzone: React.FC<DXFDropzoneProps> = ({ onFileAccepted }) => {
   return (
     <div
       {...getRootProps()}
-      className={`border-2 border-dashed border-gray-300 p-5 cursor-pointer w-[92vw] mb-4 mx-auto ${
+      className={`border-2 border-dashed border-gray-300 p-5 cursor-pointer w-[92vw] mb-4 mx-auto rounded-md ${
         fileName ? "border-double border-gray-500" : ""
       }`}
     >

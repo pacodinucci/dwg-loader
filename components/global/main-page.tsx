@@ -103,7 +103,7 @@ export default function Home() {
       <Separator />
 
       {groupedEntities.length > 0 && (
-        <div className="my-4">
+        <div className="my-4 rounded-md">
           <table className="min-w-full table-auto border-collapse border border-gray-300">
             <thead>
               <tr className="bg-gray-100">
