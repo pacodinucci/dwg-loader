@@ -33,6 +33,8 @@ export default function Home() {
           const parser = new DxfParser();
           const dxf = parser.parseSync(result);
 
+          console.log("Contenido completo del archivo DXF:", dxf);
+
           if (dxf) {
             // Agrupar las entidades por capa
             const entitiesByLayer: LayerEntities = {};
