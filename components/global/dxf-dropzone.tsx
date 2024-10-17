@@ -83,17 +83,17 @@ const DXFDropzone: React.FC<DXFDropzoneProps> = ({ onFileAccepted }) => {
   return (
     <div
       {...getRootProps()}
-      className={`border-2 border-dashed border-gray-300 p-5 cursor-pointer w-[92vw] mb-4 mx-auto rounded-md ${
-        fileName ? "border-double border-gray-500" : ""
+      className={`border-2 border-dashed border-green-700 p-5 cursor-pointer mb-4 mx-auto rounded-md ${
+        fileName ? "border-double border-green-900" : ""
       }`}
     >
       <input {...getInputProps()} />
       {loading ? (
-        <p className="text-center text-gray-500">
+        <p className="text-center text-green-900">
           Convirtiendo archivo .dwg...
         </p>
       ) : fileName ? (
-        <p className="text-center text-gray-500 font-bold">{fileName}</p>
+        <p className="text-center text-green-900 font-bold">{fileName}</p>
       ) : (
         <p className="text-center text-gray-500">
           Arrastra un archivo .dxf o .dwg acá
