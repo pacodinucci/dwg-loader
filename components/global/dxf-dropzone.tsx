@@ -75,8 +75,11 @@ const DXFDropzone: React.FC<DXFDropzoneProps> = ({ onFileAccepted }) => {
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
     accept: {
-      "application/dxf": [".dxf"],
-      "application/dwg": [".dwg"],
+      // "application/dxf": [".dxf"],
+      // "application/dwg": [".dwg"],
+      "application/octet-stream": [".dxf", ".dwg"],
+      "application/x-autocad": [".dxf", ".dwg"],
+      "application/x-dwg": [".dwg"],
     },
   });
 
